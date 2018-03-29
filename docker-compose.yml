@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    build: .
+    depends_on:
+     - db
+    ports:
+     - "8000:8000"
+    environment:
+      NODE_ENV: docker
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1Testing!
+      MYSQL_DATABASE: database_development
+      MYSQL_USER: root
+    ports:
+      - "3308:3306"

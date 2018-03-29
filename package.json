@@ -1,0 +1,31 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "description": "A base for creating angular node apps quickly",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "sync": "sequelize db:migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Peter Short",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "connect": "~2.14.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mongoose": "~3.8.8",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "nodemon": "^1.17.2",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.37.5",
+    "tedious": "^2.3.1",
+    "x2js": "^3.2.1",
+    "xml2js": "^0.4.19"
+  }
+}
