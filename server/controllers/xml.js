@@ -1,4 +1,3 @@
-var parser = require('xml2json');
 var parseString = require('xml2js').parseString;
 const BioSample = require('../models').Sample
 
