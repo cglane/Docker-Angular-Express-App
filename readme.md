@@ -1,6 +1,4 @@
-# MEAN Base app
-
-Sequilize Express Angular Node Docker
+# Docker Express Sequilize  app
 
 This is a test application using all five of the technologies above with a mysql db.
 
