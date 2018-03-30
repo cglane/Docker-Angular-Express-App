@@ -16,7 +16,6 @@ const clean_json = (result) => {
         })
         attributes.organism_name = organism_name
         attributes.descriptor = descriptor
-        console.log(attributes, 'attrs')
         samples.push(attributes)
     }
     return samples

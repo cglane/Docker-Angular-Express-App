@@ -1,13 +1,8 @@
-const todosController = require('../controllers').todos;
 const xmlController = require('../controllers').xml
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
-    message: 'Welcome to the Todos API!!!!',
+    message: 'Welcome to the API!!!!',
   }));
-
-  app.post('/api/todos', todosController.create);
-  app.get('/api/todos', todosController.list);
-  app.get('/api/todos/:todoId', todosController.retrieve);
 
   app.post('/api/readXml', xmlController.read)
 };
